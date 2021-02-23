@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img name="im" width=500 height=500>
+
+   <script> 
+    var i = 0;
+    var time = 1000;
+    var images = [];
+
+    images[0] = 'http://webmeup.com/upload/blog/lead-image-105.png';
+    images[1] = 'https://www.w3schools.com/w3css/img_lights.jpg';
+    images[2] = 'https://thebhakti.com/wp-content/uploads/2019/01/mahakal.jpg';
+    images[3] = 'https://cdn.eso.org/images/thumb300y/eso1322a.jpg';
+   
+ function slider(){ 
+document.im.src = images[i];
+if(i < images.length-1)
+{
+    i++;   
+}
+else{
+    i=0;
+}      
+setTimeout("slider()",time);
+        }
+
+
+window.onload = slider;
+    
+</script>
+</body>
+</html>
