@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="but">clicl here</button>
+    <button id="not">remove</button>
+  
+  
+  <script>
+      but.addEventListener('mouseover' , changecolorMouseOver);
+      but.addEventListener('mouseout' , changecolorMouseOut);
+      not.addEventListener('click', removeHandlers);
+     
+
+
+      function changecolorMouseOver()
+      {
+          but.style.color = 'red';
+      }
+      function  changecolorMouseOut()
+      {
+          but.style.color = 'yellow';
+      } 
+      
+      function removeHandlers()
+      {
+        but.removeEventListener('mouseover' , changecolorMouseOver);
+          but.removeEventListener('mouseout' , changecolorMouseOut);
+      }
+      
+
+        </script>
+    
+</body>
+</html> 
